@@ -18,4 +18,5 @@ This post-docking step is essential not just to "clean up" the results but also 
 conda install conda-forge::rdkit
 
 **How to use the script**
-python bondorder_correction.py "[B-](CC[C@H](CC[C@H]([C@]1(C(=O)O)N)CN(C)C)C1)([O+])(O)O" compound_file.pdb
+
+python bondorder_correction.py "CC[C@@H]1CC[C@@H](CN(C)C)[C@](C1)(C(O)=O)N" compound_file.pdb
