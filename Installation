@@ -1,0 +1,3 @@
+# Install RDKit to run the bond order correction script
+
+conda install conda-forge::rdkit
