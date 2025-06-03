@@ -11,3 +11,11 @@ After docking, these inaccuracies can lead to significant issues. For instance, 
 
 To address these challenges, chemists often use post-docking processing tools such as RDKit's AssignBondOrdersFromTemplate function. Here, the original (correct) ligand structure used as a template with proper bond order information is employed to reassign the bond orders to the docked pose. This correction is crucial for ensuring that the chemical integrity of the ligand is maintained, leading to more reliable predictions of how the molecule interacts within the binding site.
 This post-docking step is essential not just to "clean up" the results but also to build a systematic and reproducible docking pipeline. Correct bond order assignments facilitate accurate downstream applications, whether for energy minimizations, molecular dynamics simulations, or further chemical reactivity studies. Moreover, by ensuring that the molecule adheres to proper chemical rules, researchers can more confidently correlate computational findings with experimental data, ultimately aiding in the design and optimization of potential drug candidates.
+
+
+**# Install RDKit to run the bond order correction script**
+
+conda install conda-forge::rdkit
+
+**How to use the script**
+python bondorder_correction.py "[B-](CC[C@H](CC[C@H]([C@]1(C(=O)O)N)CN(C)C)C1)([O+])(O)O" compound_file.pdb
